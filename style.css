@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+body {
+  height: 100vh;
+  background: url('./img/stars.avif') no-repeat center center/cover;
+  font-family: 'Lugrasimo', cursive;
+}
+
+.sun {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 13%;
+  left: 36%;
+  background: url('./img/sun.png') no-repeat center center/cover;
+}
+
+.sun-label, .planet-label, .moon-label {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+}
+
+.sun-label {
+  margin-left: 10px;
+}
+
+.moon-label {
+  margin: -28px;
+}
+
+.planet-label:first-child {
+  margin: -32px;
+  text-align: right;
+}
+
+.earth .planet-label {
+  left: -25px;
+  bottom: 6px;
+  text-align: left;
+}
+
+.planet-label:last-child {
+  margin-left: -34px;
+}
+
+.mercury {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  background: url('./img/mercury.png') no-repeat center center/cover;
+}
+
+.venus {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  background: url('./img/venus.png') no-repeat center center/cover;
+}
+
+.earth {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  background: url('./img/earth.png') no-repeat center center/cover;
+}
+
+.earth .planet-label {
+  top: -17%;
+  left: 30%;
+}
+
+.moon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 90%;
+  right: 68%;
+  transform: translate(-50%, -100%);
+  background: url('./img/moon.png') no-repeat center center/cover;
+}
+
+.moon-label {
+  position: relative;
+  top: -20%;
+  left: -140%;
+}
+
+.mars {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 55%;
+  left: 13%;
+  background: url('./img/mars.png') no-repeat center center/cover;
+}
+
+.mars .planet-label {
+  top: -10%;
+}
+
+.jupiter {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 3%;
+  left: 23%;
+  background: url('./img/jupiter.png') no-repeat center center/cover;
+}
+
+.saturn {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  bottom: 6%;
+  right: 32%;
+  background: url('./img/saturn.png') no-repeat center center/cover;
+}
+
+.saturn .planet-label {
+  top: -6%;
+}
+
+.uranus {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  bottom: 25%;
+  right: 22%;
+  background: url('./img/uranus.png') no-repeat center center/cover;
+}
+
+.uranus .planet-label {
+  top: 20%;
+}
+
+.neptune {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 37%;
+  right: 8%;
+  background: url('./img/neptune.png') no-repeat center center/cover;
+}
+
+.neptune .planet-label {
+  top: 20%;
+}
+
+.pluto {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  background: url('./img/pluto.png') no-repeat center center/cover;
+}
+
+.pluto .planet-label {
+  top: 20%;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px 17px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn.active {
+  background-color: black;
+  color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+
+.mercury-retrograde {
+  position: absolute;
+  top: 2%;
+  right: 20%;
+  color: #f2f2f2;
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, .7);
+}
